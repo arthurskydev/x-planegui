@@ -21,7 +21,7 @@ if(MSVC)
     set(CMAKE_CXX_FLAGS_DEBUG "/MTd")
 endif()
 
-add_library(${PROJECT_NAME} STATIC src/Window.cpp include/X-PlaneGui/Window.h src/osx_clipboard.mm)
+add_library(${PROJECT_NAME} STATIC src/Window.cpp include/X-PlaneGui/Window.h src/osx_clipboard.mm include/X-PlaneGui/FontHelpers.h)
 
 target_link_libraries(${PROJECT_NAME} PUBLIC imgui)
 target_link_libraries(${PROJECT_NAME} PUBLIC ${XPLM_LIBRARY})
